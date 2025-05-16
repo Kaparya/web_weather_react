@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { CityContext } from '../context/CityContext';
 
-const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+const apiKey = `${import.meta.env.VITE_WEATHER_API_KEY}`;
 const baseUrl = 'https://api.weatherapi.com/v1';
 
 export default function useCityWeather() {
