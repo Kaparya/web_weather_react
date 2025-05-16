@@ -11,7 +11,7 @@ export default function Forecast({ data }) {
           <h3>{day.date}</h3>
           <p>{day.day.condition.text}</p>
           <p>Max: {day.day.maxtemp_c}°C, Min: {day.day.mintemp_c}°C</p>
-          <a href={`https:${day.day.condition.icon}`} target="_blank" rel="noreferrer">
+          <a href={`https:${day.day.condition.icon}`} target="_blank" rel="noopener noreferrer">
             <img src={`https:${day.day.condition.icon}`} alt="Forecast Icon" />
           </a>
         </div>
